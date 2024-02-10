@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700&family=Kaisei+Opti:wght@700&family=Kanit:wght@400;500;600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-box {
+    height: 100vh;
+    width: 100%;
+    background-image: url(keyboard.jpg);
+    background-size: cover;
+}
+
+.sidebar {
+    width: 20rem;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: -20rem;
+    background-color: rgba(0, 0, 0, 0.267);
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+.bxs-left-arrow-alt {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#check:checked~.btn-1 {
+    display: none;
+}
+
+.btn-1 {
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.fa-bars{
+    cursor: pointer;
+    width: 33px;
+    padding: 4px;
+}
+
+.fa-bars:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 7px #fff;
+}
+
+.bxs-left-arrow-alt{
+    position: relative;
+    top: 0;
+    left: 10px;
+}
+
+.bxs-left-arrow-alt:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 8px #fff;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.heading {
+    color: white;
+    padding: 0.8rem 2.9rem;
+}
+
+ul a {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.menu i {
+    color: rgb(255, 255, 255);
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    border-left: 5px solid white;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.social_media {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.social_media ul {
+    display: flex;
+}
+
+.social_media i:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+    transform: scale(1.01);
+}
+
+.social_media i {
+    text-decoration: none;
+    padding: 0 5px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 24px;
+}
